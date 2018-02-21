@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/voting_item_pic"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voting_candidate_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/voting_item_pic"
+        android:textSize="@dimen/candidate_name_text"
+        android:textStyle="bold"
+        android:textColor="@color/primaryText"
+        android:text="Vincent K"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voting_party_name"
+        android:layout_below="@+id/voting_candidate_name"
+        android:text="Party Name"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/party_name_text"
+        android:layout_toRightOf="@+id/voting_item_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/voting_select_candidate"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/voting_item_pic"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>

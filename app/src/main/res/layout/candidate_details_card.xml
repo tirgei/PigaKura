@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.captain_miao.optroundcardview.OptRoundCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/presidential_candidate"
+    app:optRoundCardCornerRadius="6dp"
+    android:elevation="2dp"
+    android:layout_margin="@dimen/card_margin_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:id="@+id/candidate_prof_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_name"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/candidate_prof_image"
+            android:textSize="@dimen/candidate_name_text"
+            android:textStyle="bold"
+            android:textColor="@color/primaryText"
+            android:text="Vincent K"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/running_mate_name"
+            android:layout_below="@+id/candidate_name"
+            android:text="Running mate"
+            android:textColor="@color/primaryText"
+            android:textSize="@dimen/party_name_text"
+            android:layout_toRightOf="@+id/candidate_prof_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidates_party_name"
+            android:layout_below="@+id/candidate_prof_image"
+            android:textSize="@dimen/party_name_text"
+            android:layout_marginLeft="10dp"
+            android:text="Party name"/>
+
+        <Button
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_margin="5dp"
+            android:id="@+id/cast_vote"
+            android:drawableTop="@drawable/ic_vote"
+            android:background="@drawable/round_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</com.github.captain_miao.optroundcardview.OptRoundCardView>

@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh_results">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:context="com.masterclass.pigakura.fragments.VotingResultFragment"
+                android:padding="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:overScrollMode="never"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/candidate_results_list"
+                    android:layout_marginBottom="2dp"/>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/dividerColor"
+                    android:layout_marginTop="5dp"/>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_height="270dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="270dp"
+                    android:id="@+id/voting_results_piechart"/>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/dividerColor"
+                    android:layout_marginTop="25dp"/>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/voting_results_barchart"
+                    android:layout_marginBottom="25dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+
+

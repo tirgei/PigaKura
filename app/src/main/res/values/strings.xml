@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Piga Kura</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="presidential_candidate">PRESIDENTIAL CANDIDATE</string>
+    <string name="sample_manifesto">Manifesto</string>
+    <string name="voting_results">Poll Results</string>
+    <string name="sample_candidate_info"> About candidate</string>
+    <string name="chat_forum_msg_hint">Type comment here...</string>
+    <string name="send_message">SEND</string>
+    <string name="forum_title">Your Comments</string>
+    <string name="motto">Kura yako, Sauti yako.</string>
+    <string name="help">Help</string>
+</resources>

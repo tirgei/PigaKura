@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="candidates_prof_border_width">1dp</dimen>
+    <dimen name="candidate_name_text">20sp</dimen>
+    <dimen name="party_name_text">15sp</dimen>
+    <dimen name="running_mate_name_text">20sp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_margin_bottom">2dp</dimen>
+    <dimen name="card_corner">20dp</dimen>
+</resources>
